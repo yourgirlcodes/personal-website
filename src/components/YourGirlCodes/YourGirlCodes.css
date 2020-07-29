@@ -3,20 +3,33 @@
     width: 100%;
     background-color: pink;
     opacity: 0.6;
+    padding: 2%;
+
 }
 
 .left-container{
-    width: 40%;
-    /* text-align: left */
+    text-align: justify;
+    padding: 2%;
 
 }
 
 .YGC-Title{
 position: relative;
+font-size: 4vh;
+font-family: 'Rajdhani', sans-serif;
+
 }
 
-.up{
-    top: -10vh;
+.animate-scrollingUp{
+    transform: translateY(0vh);
+    transition: opacity 1s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.animate-scrollingDown{
+    transform: translateY(-250%);
+    transition: opacity 1.5s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
 }
 
 .YGC{
@@ -24,7 +37,9 @@ position: relative;
 }
 
 .big{
-flex-direction: row
+flex-direction: row;
+width: 45%;
+font-size: 2vh;
 }
 
 .small{
@@ -37,6 +52,16 @@ flex-direction: row
 }
 
 .YGC-IntroText{
+    margin-top: 2vh;
+
+}
+
+.dictionary{
+    font-size: 1.5vh;
+    width: 70%;
+    padding-left: 10%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
 }
 
 .right-container{

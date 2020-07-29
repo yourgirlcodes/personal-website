@@ -16,7 +16,7 @@ export default class YourGirlCodes extends Component {
     return (
       <div className="your-girl-codes">
           <div className={(width >= breakpoint) ? "YGC big" : "YGC small"}>
-          <YGCLeftContainer scrollDir={scrollDir}/>
+          <YGCLeftContainer scrollDir={scrollDir} mustAnimate={(width >= breakpoint) && 'animate'} />
           <YGCRightContainer />
         </div>
       </div>
