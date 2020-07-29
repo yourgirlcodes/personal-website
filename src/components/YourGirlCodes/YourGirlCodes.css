@@ -2,7 +2,7 @@
     height: 70vh;
     width: 100%;
     background-color: pink;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     padding: 2%;
 
 }
@@ -38,7 +38,7 @@ font-family: 'Rajdhani', sans-serif;
 
 .big{
 flex-direction: row;
-width: 45%;
+width: 90%;
 font-size: 2vh;
 }
 
@@ -48,11 +48,13 @@ font-size: 2vh;
 }
 
 .left-container{
-
+width: 50%;
 }
 
 .YGC-IntroText{
     margin-top: 2vh;
+    /* width: 50%; */
+
 
 }
 
@@ -65,10 +67,16 @@ font-size: 2vh;
 }
 
 .right-container{
-
+width: 40%;
 }
 
 .medium-stuff{
-
+width: 200px;
+padding-left: 20%;
+padding-top: 5%;
 }
 
+.mediumThumb{
+    width: 30vw;
+    padding: 5%;
+}

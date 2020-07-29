@@ -28,7 +28,6 @@ function YGCLeftContainer({ width, scrollDir, mustAnimate }) {
         <span className="aspiring-dev">
           <b>The Bible For The Aspiring Developer.</b>{" "}
         </span>{" "}
-      </div>{" "}
       <div className="dictionary">
         Genius-Humans:<br /> Anyone who can teach me anything regarding my
         journey.{" "} <br /> <br />
@@ -41,6 +40,7 @@ function YGCLeftContainer({ width, scrollDir, mustAnimate }) {
       When I have days stuck with <b>imposter-syndrome</b>, YourGirlCodes keeps
       me going. And, truthfully, This is who <b>YourGirlCodes</b> is - the
       stronger me - as my alias, <br />I don't ever really doubt her.
+    </div>
     </div>
 );
 }
