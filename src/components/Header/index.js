@@ -20,7 +20,7 @@ const bigMenu = [
   ]
 
 function Header({ selectedNav, width }) {
-  const breakpoint = 800;
+  const breakpoint = 850;
 
   return (
     <div className="container-header">

@@ -1,0 +1,49 @@
+.your-girl-codes{
+    height: 70vh;
+    width: 100%;
+    background-color: pink;
+    opacity: 0.6;
+}
+
+.left-container{
+    width: 40%;
+    /* text-align: left */
+
+}
+
+.YGC-Title{
+position: relative;
+}
+
+.up{
+    top: -10vh;
+}
+
+.YGC{
+    display: flex
+}
+
+.big{
+flex-direction: row
+}
+
+.small{
+    flex-direction: column;
+    
+}
+
+.left-container{
+
+}
+
+.YGC-IntroText{
+}
+
+.right-container{
+
+}
+
+.medium-stuff{
+
+}
+

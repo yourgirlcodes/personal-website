@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import curji from "curji";
+
 import "../App.css";
 import "./Header.css";
-import curji from "curji";
+
 const emojis = require("emojis-list");
 
 function MenuItems({ screenType }) {
 
   const getCursorCurji = (num, id) => {
-    console.log(num, id)
     return curji(`${emojis[num]}`, {
       selector: `.header-menu > #${id}`
     });
@@ -15,7 +16,6 @@ function MenuItems({ screenType }) {
 
   return (
     <div className="header-menu">
-      {" "}
       {screenType.map((item, i) => {
         return (
           <div
@@ -26,10 +26,10 @@ function MenuItems({ screenType }) {
             className={`header-button animated delay-${i}`}
             id={item.component}
           >
-            {item.tag}{" "}
+            {item.tag}
           </div>
         );
-      })}{" "}
+      })}
     </div>
   );
 }

@@ -2,9 +2,10 @@
   background-image: url("../../assets/profile-doublefaces.jpeg");
   width: 100%;
   height: 100vh;
-  opacity: 0.18;
+  opacity: 0.18 !important;
   display: flex;
-  background-attachment: fixed
+  background-attachment: fixed;
+  z-index: 1000000;
 }
 
 .second-images-container {
@@ -45,16 +46,6 @@
   }
 
 
-.main-image {
-  display: flex;
-  z-index: 10000;
-  opacity: 1 !important;
-  position: absolute;
-  flex-direction: row;
-  vertical-align: middle;
-}
-
-
 .zoe {
   padding-top:0;
   display: inline-flex !important;
@@ -63,8 +54,6 @@
 .rotate-Z{
   transform: rotate(45deg);
 }
-
-
 
 
 @-webkit-keyframes bounceOutDown {
