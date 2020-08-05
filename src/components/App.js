@@ -4,6 +4,7 @@ import Header from "./Header";
 import Landing from "./Landing";
 import MyStory from "./MyStory";
 import YourGirlCodes from "./YourGirlCodes";
+import Footer from './Footer';
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -64,6 +65,7 @@ function App() {
       <Landing width={width} />
       <YourGirlCodes width={width} scrollDir={scrollDir} />
       <MyStory width={width} />
+      <Footer width={width} />
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.footer{
+    /* background-image: url("../../assets/profile-doublefaces.jpeg"); */
+    width: 100%;
+    opacity: 0.4;
+    background-attachment: fixed;
+
+  
+}
+
+.fiind{
+    z-index: 1000000 !important;
+    color: black;
+    display: absolute;
+}

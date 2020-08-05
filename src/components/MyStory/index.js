@@ -5,7 +5,8 @@ function MyStory({ width }) {
 
 
   return (
-    <div className="my-story"> helloooo
+    <div className="my-story"> 
+    
       </div>
   );
 }

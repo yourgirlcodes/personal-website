@@ -13,13 +13,26 @@ function YGCRightContainer({ width }) {
     )
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        setMediumPosts(data.items)
-        setMediumTitle(data.feed)
+        const relevantParts = data.items.filter(item => item.categories.length > 0)
+        console.log(relevantParts);
+        setMediumPosts(relevantParts)
+        setMediumTitle(relevantParts.title)
         return data;
       });
   };
 
+  const changeToText = (node) => {
+    let tag = document.createElement('div')
+    tag.innerHTML = node
+    node = tag.innerText
+    return node
+ }
+
+ const shortenText = (text,startingPoint,maxLength) => {
+  return text.length > maxLength?
+     text.slice(startingPoint, maxLength):text
+ }
+    
   useEffect(() => {
     getMediumPosts();
   }, []);
@@ -33,10 +46,11 @@ function YGCRightContainer({ width }) {
         { mediumPosts.map(post => {return(
           <div>
           <a href={post.link}>
-          {/* {post.title}
-          </a> */}
-          <img src={post.thumbnail} className="mediumThumb"/>
+          {/* {shortenText(changeToText(post.title), 40, (post.title.length - 4))} */}
           </a>
+          <img src={post.thumbnail} className="mediumThumb"/>
+          <p className="">{shortenText(changeToText(post.description),39, 190)+ '...'}</p>
+          {/* </a> */}
           </div>
         )})}
       </div>

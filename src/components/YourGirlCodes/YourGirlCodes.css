@@ -1,9 +1,9 @@
 .your-girl-codes{
-    height: 70vh;
+    height: 72vh;
     width: 100%;
     background-color: pink;
     /* opacity: 0.6; */
-    padding: 2%;
+    /* padding: 2%; */
 
 }
 
@@ -47,13 +47,9 @@ font-size: 2vh;
     
 }
 
-.left-container{
-width: 50%;
-}
-
 .YGC-IntroText{
-    margin-top: 2vh;
-    /* width: 50%; */
+    /* margin-top: 2vh; */
+    width: 50%;
 
 
 }
@@ -73,10 +69,10 @@ width: 40%;
 .medium-stuff{
 width: 200px;
 padding-left: 20%;
-padding-top: 5%;
+padding-top: 2%;
 }
 
 .mediumThumb{
     width: 30vw;
-    padding: 5%;
+    padding: 3%;
 }
