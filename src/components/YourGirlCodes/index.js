@@ -15,12 +15,12 @@ export default class YourGirlCodes extends Component {
       const breakpoint = 900;
 const screenType = (width >= breakpoint) ? "big" : "small"
     return (
-      <div >
-          <div>
-          {/* <YGCLeftContainer scrollDir={scrollDir} mustAnimate={(width >= breakpoint) && 'animate'} screenType={screenType}/>
-          <YGCRightContainer screenType={screenType}/> */}
-          <YGCIntro />
-          <MediumCarousel />
+      <div className="your-girl-codes">
+          <div className={`YGC ${screenType}`}>
+          <YGCLeftContainer scrollDir={scrollDir} mustAnimate={(width >= breakpoint) && 'animate'} screenType={screenType}/>
+          <YGCRightContainer screenType={screenType}/>
+          {/* <YGCIntro />
+          <MediumCarousel /> */}
         </div>
       </div>
     );

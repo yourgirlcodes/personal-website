@@ -11,7 +11,7 @@
 .second-images-container {
   background-image: url("../../assets/profile-doublefaces.jpeg");
   width: 65%;
-  height: 40vh;
+  height: 55vh;
   z-index: 1000;
   padding: 2vh;
   border: 1vh solid palevioletred;
