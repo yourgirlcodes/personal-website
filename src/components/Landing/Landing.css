@@ -1,3 +1,7 @@
+.landing{
+  text-align: center;
+
+}
 .images-container {
   background-image: url("../../assets/profile-doublefaces.jpeg");
   width: 100%;

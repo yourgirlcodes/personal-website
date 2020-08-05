@@ -2,23 +2,38 @@
     height: 72vh;
     width: 100%;
     background-color: pink;
-    /* opacity: 0.6; */
-    /* padding: 2%; */
-
 }
 
-.left-container{
+.heading{
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 4vh;
+    font-family: 'Rajdhani', sans-serif;
+    }
+
+.text-container{
     text-align: justify;
+    text-justify: distribute;
+    padding: 7%;
+    padding-top: 2%;
+    font-size: 2.5vh;
+}
+
+.dictionary{
+    text-align: justify;
+    text-justify: distribute;
+
+    font-size: 2vh;
+        padding: 4%;
+}
+
+
+.left-container{
     padding: 2%;
 
 }
 
-.YGC-Title{
-position: relative;
-font-size: 4vh;
-font-family: 'Rajdhani', sans-serif;
-
-}
 
 .animate-scrollingUp{
     transform: translateY(0vh);
@@ -47,25 +62,6 @@ font-size: 2vh;
     
 }
 
-.YGC-IntroText{
-    /* margin-top: 2vh; */
-    width: 50%;
-
-
-}
-
-.dictionary{
-    font-size: 1.5vh;
-    width: 70%;
-    padding-left: 10%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
-
-.right-container{
-width: 40%;
-}
-
 .medium-stuff{
 width: 200px;
 padding-left: 20%;
@@ -76,3 +72,4 @@ padding-top: 2%;
     width: 30vw;
     padding: 3%;
 }
+
