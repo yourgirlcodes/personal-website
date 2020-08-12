@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { MediumCarousel } from "./components/MediumCarousel";
-import { YGCIntro } from "./components/YGCIntro";
+import YGCRightContainer from './components/YGCRightContainer';
+import YGCLeftContainer from './components/YGCLeftContainer';
+import {MediumCarousel} from './components/MediumCarousel'
+import {YGCIntro} from './components/YGCIntro'
 import "./YourGirlCodes.css";
 
 export default class YourGirlCodes extends Component {
@@ -9,18 +11,14 @@ export default class YourGirlCodes extends Component {
   }
 
   render() {
-    const { width, scrollDir } = this.props;
-    const breakpoint = 900;
-    const screenType = width >= breakpoint ? "big" : "small";
+      const {width, scrollDir} = this.props
+      const breakpoint = 900;
+const screenType = (width >= breakpoint) ? "big" : "small"
     return (
       <>
-        <YGCIntro
-          scrollDir={scrollDir}
-          mustAnimate={width >= breakpoint && "animate"}
-          screenType={screenType}
-        />
-        <MediumCarousel />
-      </>
+          <YGCIntro scrollDir={scrollDir} mustAnimate={(width >= breakpoint) && 'animate'} screenType={screenType}/>
+          <MediumCarousel />
+        </>
     );
   }
 }
