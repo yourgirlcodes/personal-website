@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Header from "./Header";
 import Landing from "./Landing";
 import MyStory from "./MyStory";
@@ -61,10 +62,27 @@ function App() {
 
   return (
     <div className="App">
-      <Header width={width} />
       <Landing width={width} />
       <YourGirlCodes width={width} scrollDir={scrollDir} />
       <MyStory width={width} />
+      <Header width={width} />
+      {/* <BrowserRouter>
+        <Switch>
+          <Route
+            path="/"
+            render={props => <Landing {...props} width={width} />}
+          />
+          <Route
+            path="/YGC"
+            render={props => <YourGirlCodes {...props} width={width} />}
+          />
+          <Route
+            path="/Zoe"
+            render={props => <MyStory {...props} />}
+            width={width}
+          />
+        </Switch>
+      </BrowserRouter> */}
       <Footer width={width} />
     </div>
   );

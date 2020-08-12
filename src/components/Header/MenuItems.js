@@ -19,6 +19,7 @@ function MenuItems({ screenType }) {
       {screenType.map((item, i) => {
         return (
           <div
+          onClick={()=> window.location.push(item.route)}
             onMouseOver={() =>
               getCursorCurji(Math.floor(Math.random(670, 739)*(739 - 670 + 1)) + 670, item.component)
             }
