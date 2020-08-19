@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./Landing.css";
 
 function Landing({ width }) {
-  const breakpoint = 850;
+  const breakpoint = 810;
 const [isTranslate, setTranslate] = useState('')
 
 useEffect(()=> {

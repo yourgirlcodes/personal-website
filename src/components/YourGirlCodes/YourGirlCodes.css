@@ -1,78 +1,105 @@
-.your-girl-codes{
+.your-girl-codes {
     height: 72vh;
     width: 100%;
     background-color: pink;
-    /* opacity: 0.6; */
-    /* padding: 2%; */
-
 }
 
-.left-container{
+.heading {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 4vh;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.text-container {
     text-align: justify;
+    text-justify: distribute;
+    padding: 7%;
+    padding-top: 2%;
+    font-size: 2.5vh;
+}
+
+.dictionary {
+    text-align: justify;
+    text-justify: distribute;
+
+    font-size: 2vh;
+    padding: 4%;
+}
+
+
+.left-container {
     padding: 2%;
 
 }
 
-.YGC-Title{
-position: relative;
-font-size: 4vh;
-font-family: 'Rajdhani', sans-serif;
 
-}
-
-.animate-scrollingUp{
+.animate-scrollingUp {
     transform: translateY(0vh);
     transition: opacity 1s ease-out, transform 1.2s ease-out;
     will-change: opacity, visibility;
 }
 
-.animate-scrollingDown{
+.animate-scrollingDown {
     transform: translateY(-250%);
     transition: opacity 1.5s ease-out, transform 1.2s ease-out;
     will-change: opacity, visibility;
 }
 
-.YGC{
+.YGC {
     display: flex
 }
 
-.big{
-flex-direction: row;
-width: 90%;
-font-size: 2vh;
+.big {
+    flex-direction: row;
+    width: 90%;
+    font-size: 2vh;
 }
 
-.small{
+.small {
     flex-direction: column;
-    
-}
-
-.YGC-IntroText{
-    /* margin-top: 2vh; */
-    width: 50%;
-
 
 }
 
-.dictionary{
-    font-size: 1.5vh;
-    width: 70%;
-    padding-left: 10%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+.medium-stuff {
+    width: 200px;
+    padding-left: 20%;
+    padding-top: 2%;
 }
 
-.right-container{
-width: 40%;
-}
-
-.medium-stuff{
-width: 200px;
-padding-left: 20%;
-padding-top: 2%;
-}
-
-.mediumThumb{
-    width: 30vw;
+.mediumThumb {
+    width: 20vw;
     padding: 3%;
 }
+
+.thumbnail {
+    height: 10vw;
+    /* width: ; */
+    min-height: 200px;
+    min-width: 400px
+}
+
+.medium-article {
+    background-color: white;
+    width: 85%;
+}
+
+.awssld {
+    --content-background-color: none !important;
+    --slider-height-percentage: 20%
+}
+
+.awssld__content {
+display: inline-flex;
+width: 100%;
+/* left: 7.5%; */
+
+}
+
+/* 
+@media screen and (min-width: 800px) {
+    .medium-article {
+        display: flex;
+    }
+} */

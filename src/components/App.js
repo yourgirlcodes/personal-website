@@ -62,27 +62,29 @@ function App() {
 
   return (
     <div className="App">
-      <Landing width={width} />
+
+      {/* <Landing width={width} />
       <YourGirlCodes width={width} scrollDir={scrollDir} />
-      <MyStory width={width} />
+      <MyStory width={width} /> */}
+      <BrowserRouter>
       <Header width={width} />
-      {/* <BrowserRouter>
         <Switch>
           <Route
+          exact
             path="/"
             render={props => <Landing {...props} width={width} />}
           />
           <Route
-            path="/YGC"
+            path="/yourgirlcodes"
             render={props => <YourGirlCodes {...props} width={width} />}
           />
           <Route
-            path="/Zoe"
+            path="/me"
             render={props => <MyStory {...props} />}
             width={width}
           />
         </Switch>
-      </BrowserRouter> */}
+      </BrowserRouter>
       <Footer width={width} />
     </div>
   );

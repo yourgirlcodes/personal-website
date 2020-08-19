@@ -1,5 +1,6 @@
 import React from "react";
 import curji from "curji";
+import {Link} from 'react-router-dom'
 
 import "../App.css";
 import "./Header.css";
@@ -19,7 +20,7 @@ function MenuItems({ screenType }) {
       {screenType.map((item, i) => {
         return (
           <div
-          onClick={()=> window.location.push(item.route)}
+          onClick={()=> window.location.href=(item.route)}
             onMouseOver={() =>
               getCursorCurji(Math.floor(Math.random(670, 739)*(739 - 670 + 1)) + 670, item.component)
             }
@@ -28,10 +29,10 @@ function MenuItems({ screenType }) {
             id={item.component}
           >
             {item.tag}
-          </div>
+            </div>
         );
       })}
-    </div>
+      </div>
   );
 }
 
