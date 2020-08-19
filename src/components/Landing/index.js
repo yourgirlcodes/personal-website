@@ -21,6 +21,7 @@ return ()=> {
 
   return (
     <div className="landing">
+      <div>
         <div className="second-images-container">
           {width >= breakpoint ? (
             <div>
@@ -40,6 +41,7 @@ return ()=> {
             </div>
           )}
         </div>
+      </div>
       <div className="images-container" />
     </div>
   );
