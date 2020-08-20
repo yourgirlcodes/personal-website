@@ -18,9 +18,9 @@ export default class YourGirlCodes extends Component {
     return (
       <div className="YGC-container">
       <YGCHeader />
-        <SideBar />
-        <BottomBar />
-        <MediumCarousel />
+        {/* <SideBar /> */}
+        {/* <BottomBar /> */}
+        {/* <MediumCarousel /> */}
         </div>
     );
   }
