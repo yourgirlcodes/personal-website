@@ -3,7 +3,7 @@ import React from "react";
 export const SideBar = () => {
   return (
     <>
-      <ul>
+      <ul className="sidebar">
         <li>
           Bible: Just a collection of cool things I have learnt through changing
           career paths, meeting incredible people, and spending too much time

@@ -3,6 +3,7 @@ import { MediumCarousel } from "./components/MediumCarousel";
 import { SideBar } from "./components/SideBar";
 import { BottomBar } from "./components/BottomBar";
 import { YGCIntro } from "./components/YGCIntro";
+import {YGCHeader} from './components/YGCHeader';
 import "./YourGirlCodes.css";
 
 export default class YourGirlCodes extends Component {
@@ -15,11 +16,12 @@ export default class YourGirlCodes extends Component {
     const breakpoint = 900;
     const screenType = width >= breakpoint ? "big" : "small";
     return (
-        <YGCIntro />
-
+      <div className="YGC-container">
+      <YGCHeader />
         <SideBar />
         <BottomBar />
         <MediumCarousel />
+        </div>
     );
   }
 }

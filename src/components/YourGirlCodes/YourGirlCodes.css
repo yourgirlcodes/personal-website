@@ -98,7 +98,6 @@
 }
 
 .YGC-textContainer {
-    /* display: flex; */
     position: absolute;
     top: 25%;
     width: 60%;
@@ -114,9 +113,42 @@
     width: 80%;
 }
 
-/* 
+
 @media screen and (min-width: 800px) {
-    .medium-article {
-        display: flex;
+    .YGC-container {
+        height: 80%;
+        width: 50%;
+        padding-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
     }
-} */
+
+    .header-container {
+        width: 80%;
+        position: relative;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    span.header {
+
+        font-size: 2.5rem;
+        position: relative;
+        font-weight: 600;
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+
+    span.intro {
+        width: 70%;
+        overflow: hidden;
+        text-align: justify;
+        vertical-align: text-top;
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    ul.sidebar{
+        width: 30%;
+    }
+}
