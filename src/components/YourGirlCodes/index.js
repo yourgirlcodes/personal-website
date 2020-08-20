@@ -3,7 +3,7 @@ import { MediumCarousel } from "./components/MediumCarousel";
 import { SideBar } from "./components/SideBar";
 import { BottomBar } from "./components/BottomBar";
 import { YGCIntro } from "./components/YGCIntro";
-import {YGCHeader} from './components/YGCHeader';
+import {YGCHeader} from './components/YGCHeader'
 import "./YourGirlCodes.css";
 
 export default class YourGirlCodes extends Component {
@@ -21,7 +21,13 @@ export default class YourGirlCodes extends Component {
         {/* <SideBar /> */}
         {/* <BottomBar /> */}
         {/* <MediumCarousel /> */}
+        <YGCIntro />
+
+        <SideBar />
+        <BottomBar />
+        <MediumCarousel />
         </div>
+
     );
   }
 }
