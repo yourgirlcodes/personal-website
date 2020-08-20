@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Header from "./Header";
+import Hamburger from "./Hamburger";
 import Landing from "./Landing";
 import MyStory from "./MyStory";
 import YourGirlCodes from "./YourGirlCodes";
@@ -60,6 +61,7 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll); /* clean up */
   }, []);
 
+  const breakpoint = 900;
   return (
     <div className="App">
 
@@ -67,7 +69,12 @@ function App() {
       <YourGirlCodes width={width} scrollDir={scrollDir} />
       <MyStory width={width} /> */}
       <BrowserRouter>
+      {(width >= breakpoint) ? 
       <Header width={width} />
+      :
+      <Hamburger width={width} />
+      }
+
         <Switch>
           <Route
           exact

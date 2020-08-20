@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { MediumCarousel } from "./components/MediumCarousel";
+import { SideBar } from "./components/SideBar";
+import { BottomBar } from "./components/BottomBar";
 import { YGCIntro } from "./components/YGCIntro";
 import "./YourGirlCodes.css";
 
@@ -13,14 +15,11 @@ export default class YourGirlCodes extends Component {
     const breakpoint = 900;
     const screenType = width >= breakpoint ? "big" : "small";
     return (
-      <>
-        <YGCIntro
-          scrollDir={scrollDir}
-          mustAnimate={width >= breakpoint && "animate"}
-          screenType={screenType}
-        />
+        <YGCIntro />
+
+        <SideBar />
+        <BottomBar />
         <MediumCarousel />
-      </>
     );
   }
 }

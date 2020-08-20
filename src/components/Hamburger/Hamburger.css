@@ -1,0 +1,12 @@
+.burger-container {
+position: absolute;
+left: 10%;
+top: 5%;
+width: 4vh;
+}
+
+.burger-container div{
+    height: calc(4vh/8);
+    margin: calc(4vh/6);
+    background-color: black
+}

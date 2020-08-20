@@ -1,30 +1,41 @@
 import React from "react";
 import "../App.css";
 import "./Header.css";
-import MenuItems from './MenuItems'
+import { MenuRoutes } from "../../assets/constants/MenuRoutes";
+import curji from "curji";
 
-const bigMenu = [
-    { tag: "I am Zoë", component: "Landing", route:"/" },
-    { tag: "alias YourGirlCodes", component: "YourGirlCodes", route: "/yourgirlcodes" },
-    { tag: "get to know me", component: "MyStory", route: "/me" },
-    { tag: "see my web dev stuff", component: "Projects", route: "/dev" },
-    { tag: "or find me", component: "Footer", route:"/findme" }
-    
-  ];
+const emojis = require("emojis-list");
 
-  const smallMenu = [
-    { tag: "meet", component: "MyStory" },
-    { tag: "see", component: "Projects" },
-    { tag: "find", component: "Footer" },
-    { tag: "me", component: "Landing" },
-  ]
+function Header() {
+  const getCursorCurji = (num, id) => {
+    return curji(`${emojis[num]}`, {
+      selector: `.header-menu > #${id}`
+    });
+  };
 
-function Header({ selectedNav, width }) {
-  const breakpoint = 810;
+  const currentPage = window.location.pathname
+  let animated = currentPage === "/" ? "animated" : "";
 
   return (
-    <div className="container-header">
-    <MenuItems screenType={(width >= breakpoint) ? bigMenu : smallMenu} />
+      <div className="header-menu">
+        {MenuRoutes.map((item, i) => {
+          return (
+            <div
+              onClick={() => (window.location.href = item.route)}
+              onMouseOver={() =>
+                getCursorCurji(
+                  Math.floor(Math.random(670, 739) * (739 - 670 + 1)) + 670,
+                  item.component
+                )
+              }
+              key={`${i}-${item.component}`}
+              className={`header-button ${animated} delay-${i}`}
+              id={item.component}
+            >
+              {item.tag}
+            </div>
+          );
+        })}
     </div>
   );
 }

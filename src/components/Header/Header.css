@@ -13,6 +13,10 @@
     color: palevioletred;
     font-size: 1.5rem;
     font-family: 'Rajdhani', sans-serif;
+    width: 100%;
+    padding: calc(20px + 4vw) 3vw 3vw 0;  
+    position: fixed;
+    z-index: 10000;
 }
 
 .web-dev-text{

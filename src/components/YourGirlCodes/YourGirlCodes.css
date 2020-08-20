@@ -91,10 +91,27 @@
 }
 
 .awssld__content {
-display: inline-flex;
-width: 100%;
-/* left: 7.5%; */
+    display: inline-flex;
+    width: 100%;
+    /* left: 7.5%; */
 
+}
+
+.YGC-textContainer {
+    /* display: flex; */
+    position: absolute;
+    top: 25%;
+    width: 60%;
+    height: 60%;
+    border: 2px solid black;
+}
+
+.YGC-TextBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
 }
 
 /* 
