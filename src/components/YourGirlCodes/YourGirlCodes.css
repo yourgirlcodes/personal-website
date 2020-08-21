@@ -212,25 +212,12 @@
     }
 
     
-    #c {
-        background: url(../../assets/starImages/star8.jpeg) repeat 20% 20%;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        height: 100% !important;
-        background-size: cover;
-        animation-name: STAR-MOVE;
-        animation-duration: 150s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
     
     #foreground {
-        /* background: url(../../assets/starImages/stars3.png) repeat 35% 35%; */
         background: url(../../assets/starImages/star8.jpeg) repeat 35% 35%;
 
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        /* z-index: 300; */
         
         animation-name: STAR-MOVE;
         animation-duration: 170s;
