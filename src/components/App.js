@@ -7,6 +7,7 @@ import Landing from "./Landing";
 import MyStory from "./MyStory";
 import YourGirlCodes from "./YourGirlCodes";
 import Footer from './Footer';
+import Projects from './Projects'
 
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -88,6 +89,11 @@ function App() {
           <Route
             path="/me"
             render={props => <MyStory {...props} />}
+            width={width}
+          />
+           <Route
+            path="/dev"
+            render={props => <Projects {...props} />}
             width={width}
           />
         </Switch>

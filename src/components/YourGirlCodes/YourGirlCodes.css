@@ -199,31 +199,21 @@
 
     .awssld__content {
         color: white !important;
+        font-weight: 400;
     }
 
     @keyframes STAR-MOVE {
         from {
-            background-position: 5% 5%
+            background-position: 10% 100%
         }
         to { 
             background-position: 1300% 600%
         }
     }
 
-    #midground {
-        background: black url(../../assets/starImages/stars1.jpeg) repeat 5% 5%;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 100;
-        
-        animation-name: STAR-MOVE;
-        animation-duration: 200s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
     
-    #background {
-        background: url(../../assets/starImages/star4.jpeg) repeat 20% 20%;
+    #c {
+        background: url(../../assets/starImages/star8.jpeg) repeat 20% 20%;
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
         height: 100% !important;
@@ -235,13 +225,15 @@
     }
     
     #foreground {
-        background: url(../../assets/starImages/stars3.png) repeat 35% 35%;
+        /* background: url(../../assets/starImages/stars3.png) repeat 35% 35%; */
+        background: url(../../assets/starImages/star8.jpeg) repeat 35% 35%;
+
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 300;
+        /* z-index: 300; */
         
         animation-name: STAR-MOVE;
-        animation-duration: 100s;
+        animation-duration: 170s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }

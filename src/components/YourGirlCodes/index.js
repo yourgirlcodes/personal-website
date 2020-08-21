@@ -17,6 +17,7 @@ export default class YourGirlCodes extends Component {
     const screenType = width >= breakpoint ? "big" : "small";
     return (
       <div id="background">
+      <div id="foreground">
       <div className="YGC-container">
       <YGCHeader />
 
@@ -24,6 +25,7 @@ export default class YourGirlCodes extends Component {
 
         {/* <MediumCarousel /> */}
 </div>
+        </div>
         </div>
 
     );

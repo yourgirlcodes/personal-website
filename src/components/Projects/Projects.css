@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+    padding: 40px;
+    background-color: #121212;
+}
+
+.title-container {
+    height: 10vw;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.css-typing p {
+    font-family: "Courier";
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    color: white;
+}
+
+.css-typing p:nth-child(1) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    width: 460px;
+
+    -webkit-animation: type 1.5s steps(40, end);
+    animation: type 1.5s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    width: 620px;
+
+    -webkit-animation: type 1.5s steps(40, end);
+    animation: type 1.5s steps(40, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    width: 580px;
+
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(4) {
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    width: 730px;
+
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+
+span {
+    animation: blink 1s infinite;
+}
+
+
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+
+    from {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 960px;
+    }
+}
+
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, .75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
