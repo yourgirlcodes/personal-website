@@ -64,7 +64,8 @@ export const MediumCarousel = () => {
   }, []);
 
   return (
-    <AwesomeSlider>
+    <div className="carousel">
+    <AwesomeSlider bullets={false}>
       {mediumPosts.length > 1 &&
         mediumPosts.map((post, i) => {
           return (
@@ -80,5 +81,6 @@ export const MediumCarousel = () => {
           );
         })}
     </AwesomeSlider>
+    </div>
   );
 };

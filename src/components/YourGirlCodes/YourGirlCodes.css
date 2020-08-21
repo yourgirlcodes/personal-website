@@ -82,23 +82,15 @@
 
 .medium-article {
     background-color: white;
-    width: 85%;
+    width: 75%;
 }
 
-.awssld {
-    --content-background-color: none !important;
-    --slider-height-percentage: 20%
-}
+
 
 .awssld__content {
-    display: inline-flex;
-    width: 100%;
-    /* left: 7.5%; */
-
 }
 
 .YGC-textContainer {
-    /* display: flex; */
     position: absolute;
     top: 25%;
     width: 60%;
@@ -114,9 +106,71 @@
     width: 80%;
 }
 
-/* 
+
 @media screen and (min-width: 800px) {
-    .medium-article {
-        display: flex;
+    .YGC-container {
+        height: 80%;
+        width: 51%;
+        padding-top: 8%;
+        margin-left: auto;
+        margin-right: auto;
     }
-} */
+
+    .header-container {
+        width: 50%;
+        position: relative;
+        text-align: left;
+    }
+
+    .header {
+        font-size: 2.5rem;
+        position: relative;
+        font-weight: 600;
+        margin-top: 5rem;
+        margin-right: 2rem;
+    }
+
+    .middle-container {
+        display: flex;
+        height: 100%;
+        width: 90%;
+    }
+
+    .intro {
+        width: 100%;
+        overflow: hidden;
+        text-align: justify;
+        vertical-align: text-top;
+        position: absolute;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    span.sidebar-left {
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: justify;
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+        width: 60% !important;
+
+    }
+
+    span.sidebar-right {
+        width: 30% !important;
+        text-align: justify;
+        font-size: 1.1rem;
+        height: 100%;
+        font-weight: 300;
+        padding-left: 1.5rem;
+    }
+
+    .awssld {
+        --content-background-color: none !important;
+        --slider-height-percentage: 30%;
+        position: relative;
+        width: 85%;
+        padding-right: auto;
+        bottom: 0;
+    }
+}
