@@ -7,7 +7,6 @@ import "../YourGirlCodes.css";
 
 export const MediumCarousel = () => {
   const [mediumPosts, setMediumPosts] = useState([]);
-  const [mediumTitle, setMediumTitle] = useState("");
 
   const getMediumPosts = () => {
     fetch(
@@ -20,7 +19,6 @@ export const MediumCarousel = () => {
         );
         console.log(relevantParts);
         setMediumPosts(relevantParts);
-        setMediumTitle(relevantParts.title);
         return data;
       });
   };
@@ -48,21 +46,30 @@ export const MediumCarousel = () => {
   const getAnchor = (title, anchor) => {
 
   }
-  const shortenText = (text, maxLength, link) => {
-    const startingIndex = text.indexOf("YourGirlCodes") + 13;
+  // const shortenText = (text, maxLength, link) => {
+  //   const startingIndex = text.indexOf("YourGirlCodes") + 13;
 
-    const firstText =
-      text.length > maxLength ? text.slice(startingIndex, maxLength) : text;
+  //   const firstText =
+  //     text.length > maxLength ? text.slice(startingIndex, maxLength) : text;
 
-    const secondText = text.length > maxLength ? text.slice(maxLength) : text;
+  //   const secondText = text.length > maxLength ? text.slice(maxLength) : text;
 
-    return firstText + " " + link+ '' + secondText
-  };
+  //   return firstText + " " + link+ '' + secondText
+  // };
+
+  function shortenText(text,startingPoint ,maxLength) {
+    return text.length > maxLength?
+       text.slice(startingPoint, maxLength):
+       text
+   }
 
   useEffect(() => {
     getMediumPosts();
   }, []);
 
+  const handleClick = (link) => {
+
+  }
   return (
     <div className="carousel">
     <AwesomeSlider bullets={false}>
@@ -74,8 +81,12 @@ export const MediumCarousel = () => {
               key={`${i}-${post.link}`}
               className="medium-article"
             >
+            
               <div xs="6" className="right-content">
-                {shortenText(changeToText(post.description), 1500, changeToLink(post.title, post.link))}
+              {shortenText(changeToText(post.description), 0, 150)}
+
+              <a href={post.link} className="link">{changeToText(post.title)}</a> {""}
+              {shortenText(changeToText(post.description), 150, 400)}
               </div>
             </Container>
           );

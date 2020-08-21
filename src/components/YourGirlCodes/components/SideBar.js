@@ -12,8 +12,10 @@ export const YGCMiddle = () => {
         don't ever really doubt her.
         <b>YourGirlCodes</b> shares all my secrets and advice received from
         <b>Genius-Humans </b>
-        in <b> The Bible For The Aspiring Developer.</b>{" "}
+        in <b> The Bible For The Aspiring Developer: </b><br />{" "}
+        <MediumCarousel />
       </span>
+
       <span className="sidebar-right">
         <ul >
           <li>
