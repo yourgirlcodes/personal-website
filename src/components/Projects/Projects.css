@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-.projects-container{
+.projects-container {
     background-color: black;
     height: 100vh;
+    font-family: "Courier";
+
+    /* width: 100vw; */
     /* position: absolute; */
 }
 
 .title-container {
     height: 10vw;
-    width: 40rem;
+    width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     padding-top: 10%;
+}
+
+.css-typing {
+    text-align: center !important;
+    padding-left: 2rem;
+    border-left: 2px solid white;
 }
 
 .css-typing p {
@@ -29,7 +37,8 @@
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    width: 460px;
+    width: 455px;
+    text-align: center !important;
 
     -webkit-animation: type 1.5s steps(40, end);
     animation: type 1.5s steps(40, end);
@@ -41,8 +50,7 @@
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    width: 622px;
-
+    width: 620px;
     -webkit-animation: type 1.5s steps(40, end);
     animation: type 1.5s steps(40, end);
     -webkit-animation-delay: 2s;
@@ -55,7 +63,7 @@
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    width: 580px;
+    width: 575px;
 
     -webkit-animation: type 3s steps(40, end);
     animation: type 3s steps(40, end);
@@ -69,7 +77,7 @@
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
-    width: 720px;
+    width: 838px;
 
     -webkit-animation: type 3s steps(40, end);
     animation: type 3s steps(40, end);
@@ -86,13 +94,13 @@
     width: 890px;
     -webkit-animation: type 3s steps(40, end);
     animation: type 3s steps(40, end);
-    -webkit-animation-delay: 9s;
-    animation-delay: 9s;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-.css-typing p:nth-child(4) {
+.css-typing p:nth-child(6) {
     white-space: nowrap;
     overflow: hidden;
     opacity: 0;
@@ -155,3 +163,42 @@ span {
         border-right-color: transparent;
     }
 }
+
+.project-title {
+
+padding: 2rem;
+}
+
+.project{
+    text-align: center;
+    font-size: 1.5rem;
+    /* padding: 5px; */
+}
+
+.project:hover{
+    opacity: 0.3;
+    font-weight: 800px;
+    color: white !important;
+    z-index: 1
+}
+
+@media screen and (min-width: 800px) {
+    .projects {
+        display: flex;
+        flex-direction: row;
+        padding-top: 8rem;
+        flex-flow: wrap;
+        width: 90vw;
+        margin-left: auto;
+        justify-content: space-evenly;
+    }
+}
+
+
+/* @media screen and (max-width: 900px) {
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+} */
