@@ -1,0 +1,11 @@
+.first-stripe{
+    width: 10vw;
+    /* overflow-wrap: break-word; */
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: justify; */
+}
+
+.my-story{
+    padding-top: 10%;
+}
