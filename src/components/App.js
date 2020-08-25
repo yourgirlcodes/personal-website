@@ -4,7 +4,7 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Header from "./Header";
 import Hamburger from "./Hamburger";
 import Landing from "./Landing";
-import MyStory from "./MyStory";
+import FindMe from "./FindMe";
 import YourGirlCodes from "./YourGirlCodes";
 import Footer from './Footer';
 import Projects from './Projects'
@@ -86,14 +86,14 @@ function App() {
             path="/yourgirlcodes"
             render={props => <YourGirlCodes {...props} width={width} />}
           />
-          <Route
-            path="/me"
-            render={props => <MyStory {...props} />}
-            width={width}
-          />
            <Route
             path="/dev"
             render={props => <Projects {...props} />}
+            width={width}
+          />
+          <Route
+            path="/findme"
+            render={props => <FindMe {...props} />}
             width={width}
           />
         </Switch>
