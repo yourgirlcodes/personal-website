@@ -204,7 +204,7 @@ padding: 2rem;
     height: 15vh;
     background-image: url("../../assets/profile-doublefaces.jpeg");
     background-position: 20% 30%;
-    bottom: 15%;
+    bottom: 8%;
     position: absolute;
     box-shadow: inset 10px 5px 15px 5px white; 
     opacity: 0.5;
