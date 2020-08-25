@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Formik, Field, Form } from "formik";
 import axios from "axios";
+import "../FindMe.css";
 
 export const ContactForm = () => {
   const [name, setName] = useState("");
@@ -40,19 +41,22 @@ export const ContactForm = () => {
       }}
       onSubmit={values => handleSubmit(values)}
     >
-      <Form>
-        <label htmlFor="name">Name: </label>
-        <Field id="name" name="name" placeholder="Who are you" />
+      <Form className="form-container">
+        <div className="form-firststripe">
+          <Field className="name-field" id="name" name="name" placeholder="Your Name" />
+          <Field className="name-field" id="email" name="email" type="email" placeholder="Your Email" />
+        </div>
 
-        <label htmlFor="email">Email Address: </label>
-        <Field id="email" name="email" type="email" />
+        <div className="subject-line">
+          <label htmlFor="subject">Subject: </label>
+          <Field id="subject" name="subject" />
+        </div>
 
-        <label htmlFor="subject">Subject: </label>
-        <Field id="subject" name="subject" />
-
-        <label htmlFor="message">Message: </label>
-        <Field id="text" name="text" />
-        <button type="submit">Send!</button>
+        <div className="message-container">
+          <label htmlFor="message">Message: </label>
+          <Field id="text" name="text" as="textarea" />
+        </div>
+        <button id="send" type="submit">Send</button>
       </Form>
     </Formik>
   );
